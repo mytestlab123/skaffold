@@ -6,3 +6,6 @@ spec:
   containers:
   - name: nginx
     image: amitkarpe/nginx
+    ports:
+    - containerPort: 80
+      protocol: TCP
