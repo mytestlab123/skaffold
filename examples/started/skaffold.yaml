@@ -1,0 +1,11 @@
+apiVersion: skaffold/v2alpha2
+kind: Config
+metadata:
+  name: started
+build:
+  artifacts:
+  - image: amitkarpe/skaffold-example
+deploy:
+  kubectl:
+    manifests:
+    - k8s-pod.yaml
